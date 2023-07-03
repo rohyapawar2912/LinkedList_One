@@ -11,14 +11,13 @@ namespace LinlListDemo
         static void Main(string[] args)
         {
 
-
-
             while (true)
             {
                 Console.WriteLine("select any one option");
                 Console.WriteLine("1 - linkedlistDemo");
                 Console.WriteLine("2 - StackDemo");
                 Console.WriteLine("3 - LinkedList_Node");
+                Console.WriteLine("4 - Revesed Order");
 
                 int option = Convert.ToInt32(Console.ReadLine());
                 switch (option)
@@ -41,16 +40,20 @@ namespace LinlListDemo
                         linKedList_Node.Add(23);
                         break;
 
-                        default:
-                        Console.WriteLine("Invalid option");
+                    case 4:
+                        LinKedList_Node linKedList_Nodes = new LinKedList_Node();
+                        linKedList_Nodes.Reverse_Order(55);
+                        linKedList_Nodes.Reverse_Order(6);
+                        linKedList_Nodes.Reverse_Order(9);
+
+                        linKedList_Nodes.Display();
                         break;
 
+                    default:
 
+                        Console.WriteLine("Invalid option");
 
-
-
-
-
+                        break;
                 }
 
             }
