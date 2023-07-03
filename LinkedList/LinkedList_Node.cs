@@ -56,6 +56,15 @@ namespace LinlListDemo
                 head.next = temp;
             }
         }
+        public void Remove_Frist()
+        {
+            if(head == null)
+            {
+                Console.WriteLine("List is Empty");
+            }
+            head = head.next;
+            Console.WriteLine("Frist element deleted successfully");
+        }
 
     }
 }
