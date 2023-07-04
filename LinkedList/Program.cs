@@ -19,6 +19,7 @@ namespace LinlListDemo
                 Console.WriteLine("3 - LinkedList_Node");
                 Console.WriteLine("4 - Revesed Order");
                 Console.WriteLine("5 - Remove Frist");
+                Console.WriteLine("6 - Remove last ");
 
                 int option = Convert.ToInt32(Console.ReadLine());
                 switch (option)
@@ -54,6 +55,12 @@ namespace LinlListDemo
                         LinKedList_Node linKedList_Nodess = new LinKedList_Node();
                         linKedList_Nodess.Remove_Frist();
                         linKedList_Nodess.Display();
+                        break;
+
+                    case 6:
+                        LinKedList_Node linKedList_Nodesss = new LinKedList_Node();
+                        linKedList_Nodesss.Remove_Last();
+                        linKedList_Nodesss.Display();
                         break;
 
 

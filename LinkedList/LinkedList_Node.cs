@@ -65,6 +65,29 @@ namespace LinlListDemo
             head = head.next;
             Console.WriteLine("Frist element deleted successfully");
         }
+        public void Remove_Last()
+        {
+            if (head == null)
+            {
+                Console.WriteLine("Last is empty");
 
+            }
+            if (head.next != null)
+            {
+                Console.WriteLine(" the next element of head is null");
+            }
+            else 
+            {
+                Node temp = head.next;
+                while (temp.next.next != null)
+                {
+                    temp = temp.next;
+                }
+                temp.next = null;
+                Console.WriteLine("Remove last element");
+
+
+            }
+        }
     }
 }
